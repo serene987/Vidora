@@ -1,0 +1,9 @@
+/* Register Page Specific Styles */
+.auth-container {
+  max-width: 450px;
+}
+
+.success-message h2 {
+  color: #4CAF50;
+  margin-bottom: 16px;
+}

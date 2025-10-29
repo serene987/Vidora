@@ -1,0 +1,139 @@
+/* Dashboard Page Specific Styles */
+.dashboard {
+  min-height: 100vh;
+  padding: 100px 20px;
+}
+
+.dashboard-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.dashboard-header h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.dashboard-content {
+  display: grid;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-section, 
+.subscriptions-section {
+  background: #141414;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+.profile-section h2, 
+.subscriptions-section h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.profile-card {
+  background: #000000;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #333333;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile-card p {
+  margin-bottom: 12px;
+  color: #B3B3B3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-card strong {
+  color: #FFFFFF;
+}
+
+.no-subscriptions {
+  text-align: center;
+  padding: 48px;
+  color: #B3B3B3;
+}
+
+.subscriptions-grid {
+  display: grid;
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.subscription-card {
+  background: #000000;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  padding: 24px;
+  transition: border-color 0.3s ease;
+}
+
+.subscription-card:hover {
+  border-color: #E50914;
+}
+
+.subscription-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.subscription-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status.active {
+  background: rgba(76, 175, 80, 0.2);
+  color: #4CAF50;
+}
+
+.status.cancelled {
+  background: rgba(229, 9, 20, 0.2);
+  color: #E50914;
+}
+
+.status.trialing {
+  background: rgba(255, 193, 7, 0.2);
+  color: #FFC107;
+}
+
+.subscription-details p {
+  margin-bottom: 8px;
+  color: #B3B3B3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscription-details strong {
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .subscription-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

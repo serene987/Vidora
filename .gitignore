@@ -1,0 +1,40 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies and build
+node_modules
+dist
+dist-ssr
+*.local
+.env.example
+
+# Amazon Q (AI Assistant)
+.amazon-q/
+.amazonq/
+.amzq/
+.aws/
+amazon-q-config.json
+amazon-q-settings.json
+# Q memory/session/cache files
+.q-memory*
+.q-session*
+.q-cache*
+.q-history*
+.q-backup*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
